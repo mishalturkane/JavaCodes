@@ -1,24 +1,21 @@
-class Demo
-{
-	private int x;
-	public  Demo()
-	{
-		System.out.println("Constructor called: and x=");
-	}
+package argumentpassingdemo;
 
-	static
-	{
-		System.out.println("static blocked called:");
-		
-	}
+public class UseDemo {
+    public static void main(String[] args) {
+        int [] arr={10,20,30,40,50};
+        System.out.println("Before doubler:");
+        for(int x:arr)
+        {
+            System.out.println(x);
+
+        }
+        Demo obj=new Demo();
+        obj.doubler(arr);
+
+        System.out.println("After doubling:");
+        for(int x:arr)
+        {
+            System.out.println(x);
+        }
+    }
 }
-
-
-class UseDemo
-{
-	public static void main(String [] args)
-	{
-			Demo d=new Demo();
-	}
-}
-	
