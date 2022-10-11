@@ -1,8 +1,11 @@
-class Demo
-{
-    public static void main(String[] args)
-{
-    double show=-5/9;
-    System.out.println("Show is "+show);
-}
+package argumentpassingdemo;
+
+public class Demo {
+    public void doubler(int [] brr)
+    {
+        for(int i=0;i<brr.length;i++)
+        {
+            brr[i]=brr[i]*2;
+        }
+    }
 }
