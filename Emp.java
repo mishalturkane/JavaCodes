@@ -1,27 +1,25 @@
-package staticdemo;
+package staticblock;
 
 public class Emp {
-    private int age;
-    private String name;
-    private int id;
-    private static int nextId=1;
-
-    public Emp(int a,String n)
+    public static String compname="Google";
+    public Emp()
     {
-        age=a;
-        name=n;
-        id=nextId++;
+        System.out.println("Emp constructor called:");
     }
-    public void show()
+    static
     {
-        System.out.println("id="+id+",name is="+name+",age is="+age);
+        System.out.println("static1 blocked:");
     }
-    public void showNextId()
+    static
     {
-        System.out.println("Id of next EMP is="+nextId);
+        System.out.println("static2 blocked:");
     }
-    protected void finalize()
+    static
     {
-        --nextId;
+        System.out.println("static3 blocked:");
+    }
+    static
+    {
+        System.out.println("static4 blocked:");
     }
 }
