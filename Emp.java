@@ -1,25 +1,22 @@
-package staticblock;
+package thisdemo;
 
 public class Emp {
-    public static String compname="Google";
-    public Emp()
-    {
-        System.out.println("Emp constructor called:");
+    private int id;
+    private String name;
+    private double salary;
+
+    public Emp(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
     }
-    static
+
+
+    public void show()
     {
-        System.out.println("static1 blocked:");
-    }
-    static
-    {
-        System.out.println("static2 blocked:");
-    }
-    static
-    {
-        System.out.println("static3 blocked:");
-    }
-    static
-    {
-        System.out.println("static4 blocked:");
+        System.out.println("id is:"+id);
+        System.out.println("Name is:"+name);
+        System.out.println("Salary is:"+salary);
     }
 }
+
