@@ -1,9 +1,8 @@
-package staticblock;
+package thisdemo;
 
 public class UseEmp {
     public static void main(String[] args) {
-        System.out.println(Emp.compname);
-        System.out.println(Emp.compname);
-        System.out.println(Emp.compname);
+        Emp e=new Emp(101,"Mishal",300000);
+        e.show();
     }
 }
