@@ -1,11 +1,10 @@
-package inhdemo;
+package inheri2demo;
 
 public class Emp {
     private String name;
     private double salary;
 
-    public void  setData(String name,double salary)
-    {
+    public Emp(String name, double sa) {
         this.name=name;
         this.salary=salary;
     }
