@@ -10,20 +10,15 @@ import java.util.List;
 
 /**
  *
- * @author misha
+ * @author prati
  */
 public class ListEx2 {
     public static void main(String[] args) {
-        List <String> month=new ArrayList <>();
-        month.add("jan");
-        month.add("feb");
-        month.add("mar");
-        month.add("apr");
-        month.add("may");
-        month.add(3,"dec");
-        System.out.println(month);
+        List<String> li=new ArrayList<>();
+        li.add("Jan");
+        li.add("Feb");
+        System.out.println("Is Jan is present?"+li.contains("Jan"));
+        System.out.println("Is feb is present?"+li.contains("feb"));        
     }
-    
-   
     
 }
